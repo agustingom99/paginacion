@@ -1,3 +1,10 @@
+<mat-paginator [length]="users.length"
+               [pageSize]="page_size"
+               [pageSizeOptions]="pageSizeOptions"
+               (page)="handlePage($event)"
+               aria-label="Select page">
+</mat-paginator>
+
 <ul>
     <li *ngFor="let user of users | paginate:page_size:page_number">
         <ul>
