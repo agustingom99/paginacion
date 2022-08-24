@@ -7,11 +7,19 @@ import { AppComponent } from './app.component';
 import { PaginatePipe } from './pipes/paginate.pipe';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CustomMatPaginatorIntl } from './paginator-es';
+import { PipeComponentComponent } from './pipe-component/pipe-component.component';
+import { UppercasePipe } from './pipes/uppercase.pipe';
+import { SortPipe } from './pipes/sort.pipe';
+import { SortbyPipe } from './pipes/sortby.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
-    PaginatePipe
+    PaginatePipe,
+    PipeComponentComponent,
+    UppercasePipe,
+    SortPipe,
+    SortbyPipe
   ],
   imports: [
     BrowserModule,

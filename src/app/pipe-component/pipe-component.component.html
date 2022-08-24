@@ -1,0 +1,12 @@
+<h2>Pipe simple (uppercase) </h2>
+<div>{{lista[0].nombre| uppercase}}</div>
+
+<h2>Pipe nomal:(ordenar)</h2>
+<ul>
+    <li *ngFor="let pelicula of lista |sort"> ID:{{pelicula.id}}, nombre:{{pelicula.nombre}}, precio:{{pelicula.precio}}</li>
+</ul>
+
+<h2>Pipe complejo: (ordenar con parametros)</h2>
+<ul>
+    <li *ngFor="let pelicula of lista" |sortby:true> ID:{{pelicula.id}}, nombre:{{pelicula.nombre}}, precio:{{pelicula.precio}}</li>
+</ul>
