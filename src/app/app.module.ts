@@ -11,6 +11,7 @@ import { PipeComponentComponent } from './pipe-component/pipe-component.componen
 import { UppercasePipe } from './pipes/uppercase.pipe';
 import { SortPipe } from './pipes/sort.pipe';
 import { SortbyPipe } from './pipes/sortby.pipe';
+import { PeticionesHttpComponent } from './peticiones-http/peticiones-http.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { SortbyPipe } from './pipes/sortby.pipe';
     PipeComponentComponent,
     UppercasePipe,
     SortPipe,
-    SortbyPipe
+    SortbyPipe,
+    PeticionesHttpComponent
   ],
   imports: [
     BrowserModule,
