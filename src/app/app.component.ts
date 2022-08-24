@@ -21,5 +21,8 @@ export class AppComponent implements OnInit {
     })
   }
 
+  page_size: number = 5;
+  page_number: number = 1;
+   
 
 }

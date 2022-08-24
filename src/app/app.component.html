@@ -1,1 +1,11 @@
-{{users|json}}
+<ul>
+    <li *ngFor="let user of users | paginate:page_size:page_number">
+        <ul>
+            <li *ngFor="let prop of user |keyvalue">
+                {{prop.key}}: {{prop.value}}
+            </li>
+        </ul>
+        <br>
+        <br>
+    </li>
+</ul>
